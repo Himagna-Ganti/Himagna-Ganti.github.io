@@ -2,13 +2,14 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import hamburger from "./assets/hamburger.svg";
+import pfp from "./assets/100x100.jpg";
 
 function NavBar() {
   return (
     <section className="flex m-[10px] md:m-[20px]  items-center justify-between  ">
       <div className=" flex  space-x-2  ">
         <Avatar className="h-[50px] w-[50px] md:h-[70px] md:w-[70px]">
-          <AvatarImage src="https://github.com/shadcn.png" />
+          <AvatarImage src={pfp} />
           <AvatarFallback>HG</AvatarFallback>
         </Avatar>
         <div className="flex items-center pl-[10px] text-[20px] font-nunito text-txt     ">
