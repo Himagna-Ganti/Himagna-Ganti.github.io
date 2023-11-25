@@ -10,13 +10,15 @@ module.exports = {
     extend: {
       fontFamily: {
         nunito: ["Nunito", "sans-serif"],
+        pop: ["Poppins", "sans-serif"],
+        menlo: ["Menlo", "sans-serif"],
       },
       colors: {
-        txt: "#031011",
-        background: "#e5f8fa",
-        primary: "#176a73",
-        secondary: "#c3eef3",
-        accent: "#27b4c4",
+        txt: "#FFFFFF",
+        background: "#000814",
+        primary: "#507daa",
+        secondary: "#075985",
+        accent: "#ffd60a",
       },
     },
   },
