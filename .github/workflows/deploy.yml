@@ -20,11 +20,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-<<<<<<< HEAD
-        run: npm install --force
-=======
-        uses: bahmutov/npm-install@v1 
->>>>>>> e10fa4a5c2eb5a8c33cbe23f0e67be5a3e7fc2c5
+        run: npm install -force
 
       - name: Build project
         run: npm run build
