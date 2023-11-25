@@ -1,14 +1,19 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import hamburger from "./assets/hamburger.svg";
 import pfp from "./assets/100x100.jpg";
 
 function NavBar() {
   return (
-    <section className="flex m-[10px] md:m-[20px]  items-center justify-between  ">
+    <section className="flex m-[10px] md:m-[20px]  items-center justify-between   ">
       <div className=" flex  space-x-2  ">
-        <Avatar className="h-[50px] w-[50px] md:h-[70px] md:w-[70px]">
+        <Avatar className="h-[50px] w-[50px] md:h-[70px] md:w-[70px]  ">
           <AvatarImage src={pfp} />
           <AvatarFallback>HG</AvatarFallback>
         </Avatar>
@@ -17,22 +22,24 @@ function NavBar() {
         </div>
       </div>
       <div className=" flex  font-nunito ">
-        <div className="flex lg:hidden items-center">
+        <div className="flex lg:hidden  items-center">
           <Sheet>
             <SheetTrigger>
-              <Avatar className="h-[20px] w-[20px] rounded-none">
+              <Avatar className="h-[20px] w-[20px] rounded-none text-white">
                 <AvatarImage src={hamburger} />
-                <AvatarFallback>Menu</AvatarFallback>
               </Avatar>
             </SheetTrigger>
-            <SheetContent className="bg-secondary ">
-              <div className="flex flex-col space-y-6 mt-[20px]">
-                <Button>Experience</Button>
-                <Button>Projects</Button>
-                <Button>Skills</Button>
-                <Button>Contact Me</Button>
-                <Button>Resume</Button>
+            <SheetContent className="bg-[#191724]">
+              <div className="flex flex-col space-y-10 mt-[20px] ">
+                <Button className="bg-background text-accent   ">
+                  Experience
+                </Button>
+                <Button className="bg-background text-accent">Projects</Button>
+                <Button className="bg-background text-accent">Skills</Button>
+                <Button className="bg-background text-accent">Contact</Button>
+                <Button className="bg-background text-accent">Resume</Button>
               </div>
+              <SheetClose className="bg-accent" />
             </SheetContent>
           </Sheet>
         </div>
@@ -40,7 +47,7 @@ function NavBar() {
         <ul className=" hidden lg:block  ">
           <Button
             variant="link"
-            className="text-txt text-[10px] md:text-[20px] hover:text-accent  "
+            className="text-txt text-[10px] md:text-[20px] hover:text-accent   "
           >
             Experience
           </Button>
@@ -57,7 +64,7 @@ function NavBar() {
             Skills
           </Button>
           <Button
-            variant="destructive"
+            variant="link"
             className="text-txt text-[10px] md:text-[20px] hover:text-accent  "
           >
             Contact Me
