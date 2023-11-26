@@ -18,7 +18,7 @@ function NavBar() {
           <AvatarFallback>HG</AvatarFallback>
         </Avatar>
         <div className="flex items-center pl-[10px] text-[20px] font-nunito text-txt     ">
-          Ganti, Himagna
+          Ganti, Savitha
         </div>
       </div>
       <div className=" flex  font-nunito ">
