@@ -10,11 +10,11 @@ function Hero() {
       <div className="flex flex-col p-[10px]  items-center justify-center lg:w-2/4 ">
         {/* Hero section */}
 
-        <h1 className="text-[25px] lg:text-[35px] text-txt">
+        <h1 className="text-[22px] lg:text-[35px] text-txt">
           Hello, my name is <span className="text-accent ">Himagna Ganti</span>.
         </h1>
         <br></br>
-        <h2 className="text-[15px] lg:text-[20px] text-txt text-justify ">
+        <h2 className="text-[12px] lg:text-[20px] text-txt text-justify ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
           dolore veniam! Exercitationem dicta molestias nostrum alias aut,
           cupiditate aspernatur veniam dignissimos facere vel culpa optio, nisi

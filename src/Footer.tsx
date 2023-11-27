@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className=" m-[10px] text-txt lg:m-[20px] text-[10px] lg:text-[13px] flex-col justify-center space-y-2  ">
+    <div className=" m-[10px] text-txt lg:m-[20px] text-[9px] lg:text-[13px] flex-col justify-center space-y-2  ">
       <div className="flex justify-center">
         <h1>
           Built by{" "}

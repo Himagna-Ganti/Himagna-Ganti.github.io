@@ -3,7 +3,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 function ContactForm() {
   return (
-    <div className=" m-[10px] lg:m-[20px]">
+    <div className=" m-[10px] lg:m-[20px]" id="contact">
       <div className="flex justify-center ">
         <h1 className="text-txt text-[25px] lg:text-[35px]">Contact Me</h1>
       </div>

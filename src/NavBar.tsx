@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-scroll";
 import {
   Sheet,
   SheetClose,
@@ -29,15 +30,73 @@ function NavBar() {
                 <AvatarImage src={hamburger} />
               </Avatar>
             </SheetTrigger>
-            <SheetContent className="bg-[#191724]">
-              <div className="flex flex-col space-y-10 mt-[20px] ">
-                <Button className="bg-background text-accent   ">
-                  Experience
-                </Button>
-                <Button className="bg-background text-accent">Projects</Button>
-                <Button className="bg-background text-accent">Skills</Button>
-                <Button className="bg-background text-accent">Contact</Button>
-                <Button className="bg-background text-accent">Resume</Button>
+            <SheetContent className="bg-[#191724] ">
+              <div className="flex flex-col space-y-10 mt-[20px]  ">
+                <SheetClose asChild className="flex justify-center">
+                  <Link
+                    to="experience"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                  >
+                    <Button className="bg-background text-accent w-[200px]  ">
+                      Experience
+                    </Button>
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild className="flex justify-center">
+                  <Link
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                  >
+                    <Button className="bg-background text-accent w-[200px]  ">
+                      Projects
+                    </Button>
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild className="flex justify-center">
+                  <Link
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                  >
+                    <Button className="bg-background text-accent w-[200px]  ">
+                      Skills
+                    </Button>
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild className="flex justify-center">
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                  >
+                    <Button className="bg-background text-accent w-[200px]  ">
+                      Contact me
+                    </Button>
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild className="flex justify-center">
+                  <Link
+                    to="experience"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                  >
+                    <Button className="bg-background text-accent w-[200px]  ">
+                      Resume
+                    </Button>
+                  </Link>
+                </SheetClose>
               </div>
               <SheetClose className="bg-accent" />
             </SheetContent>
@@ -45,36 +104,64 @@ function NavBar() {
         </div>
 
         <ul className=" hidden lg:block  ">
-          <Button
-            variant="link"
-            className="text-txt text-[10px] md:text-[20px] hover:text-accent   "
+          <Link
+            to="experience"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
           >
-            Experience
-          </Button>
-          <Button
-            variant="link"
-            className="text-txt text-[10px] md:text-[20px] hover:text-accent "
+            <Button
+              variant="link"
+              className="text-txt text-[10px] md:text-[20px] hover:text-accent   "
+            >
+              Experience
+            </Button>
+          </Link>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
           >
-            Projects
-          </Button>
-          <Button
-            variant="link"
-            className="text-txt text-[10px] md:text-[20px] hover:text-accent "
+            <Button
+              variant="link"
+              className="text-txt text-[10px] md:text-[20px] hover:text-accent "
+            >
+              Projects
+            </Button>
+          </Link>
+          <Link to="skills" spy={true} smooth={true} offset={0} duration={500}>
+            <Button
+              variant="link"
+              className="text-txt text-[10px] md:text-[20px] hover:text-accent "
+            >
+              Skills
+            </Button>
+          </Link>
+          <Link to="contact" spy={true} smooth={true} offset={0} duration={500}>
+            <Button
+              variant="link"
+              className="text-txt text-[10px] md:text-[20px] hover:text-accent  "
+            >
+              Contact Me
+            </Button>
+          </Link>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
           >
-            Skills
-          </Button>
-          <Button
-            variant="link"
-            className="text-txt text-[10px] md:text-[20px] hover:text-accent  "
-          >
-            Contact Me
-          </Button>
-          <Button
-            variant="link"
-            className="text-txt text-[10px] md:text-[20px] hover:text-accent  "
-          >
-            Resume
-          </Button>
+            <Button
+              variant="link"
+              className="text-txt text-[10px] md:text-[20px] hover:text-accent  "
+            >
+              Resume
+            </Button>
+          </Link>
         </ul>
       </div>
     </section>

@@ -139,7 +139,7 @@ let skills = [
 
 function Skills() {
   return (
-    <div className=" m-[10px] lg:m-[20px]  ">
+    <div className=" m-[10px] lg:m-[20px]  " id="skills">
       <div className="flex justify-center ">
         <h1 className="text-txt text-[25px] lg:text-[35px]">Skills</h1>
       </div>
@@ -152,7 +152,7 @@ function Skills() {
       </div>
       <div className="flex justify-center space-x-2 m-[10px] lg:m-[20px]">
         <div className="h-[18px] w-[18px] lg:h-[25px] lg:w-[25px] rounded-md bg-accent"></div>
-        <h1 className="text-txt -translate-y-0.5 text-[12px] lg:text-[18px]">
+        <h1 className="text-txt -translate-y-0 text-[12px] lg:text-[18px]">
           - Learning
         </h1>
       </div>

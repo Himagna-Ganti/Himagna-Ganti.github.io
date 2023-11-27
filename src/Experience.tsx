@@ -38,31 +38,31 @@ function Experience() {
   return (
     <div className="  text-txt m-[10px]  lg:m-[20px]" id="experience">
       <div className="flex justify-center">
-        <h1 className="text-txt text-[30px] lg:text-[35px]">Experience</h1>
+        <h1 className="text-txt text-[25px] lg:text-[35px]">Experience</h1>
       </div>
       <div className="mt-[20px]">
         {workEx.map(function (data) {
           return (
             <div className=" mb-[15px] flex flex-col p-[10px]">
               <div className="mb-[5px] flex flex-row justify-between">
-                <h1 className="text-accent text-[18px] lg:text-[25px]">
+                <h1 className="text-accent text-[15px] lg:text-[25px]">
                   {data.company}
                 </h1>
-                <h1 className="text-txt text-[15px] pt-[5px] lg:text-[18px]">
+                <h1 className="text-txt text-[12px] pt-[5px] lg:text-[18px]">
                   {data.location}
                 </h1>
               </div>
               <div className="flex flex-row justify-between">
-                <h1 className="text-txt text-[15px] lg:text-[18px]">
+                <h1 className="text-txt text-[12px] lg:text-[18px]">
                   {data.position}
                 </h1>
-                <h1 className="text-txt text-[15px] lg:text-[18px]">
+                <h1 className="text-txt text-[12px] lg:text-[18px]">
                   {data.duration}
                 </h1>
               </div>
 
               <div className=" m-[20px] lg:m-[30px] ">
-                <ul className="text-[15px] space-y-2 list-image-[url(/src/assets/arroww.svg)] list-outside lg:text-[18px] lg:list-image-[url(/src/assets/arrow.svg)] ">
+                <ul className="text-[12px] space-y-2 list-image-[url(/src/assets/arroww.svg)] list-outside lg:text-[18px] lg:list-image-[url(/src/assets/arrow.svg)] ">
                   {data.summary.map(function (data) {
                     return <li className="  "> {data}</li>;
                   })}

@@ -40,7 +40,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="m-[10px] lg:m-[20px]  text-txt flex-col ">
+    <div className="m-[10px] lg:m-[20px]  text-txt flex-col " id="projects">
       <div className="flex justify-center">
         <h1 className="text-txt text-[25px] lg:text-[35px]">Projects</h1>
       </div>
@@ -49,11 +49,11 @@ function Projects() {
           return (
             <Card className=" p-[10px] border-0 shadow-xl lg:p-[20px] bg-[rgb(30,30,30)]">
               <div className="space-y-2 flex-col">
-                <CardTitle className="text-accent text-[18px] lg:text-[25px]">
+                <CardTitle className="text-accent text-[15px] lg:text-[25px]">
                   {data.title}
                 </CardTitle>
                 <div className="flex ">
-                  <CardDescription className="text-[15px] text-justify lg:w-3/5 lg:text-[18px] ">
+                  <CardDescription className="text-[12px] text-justify lg:w-3/5 lg:text-[18px] ">
                     {data.description}
                   </CardDescription>
                   <div className="w-2/5  hidden lg:block ">
