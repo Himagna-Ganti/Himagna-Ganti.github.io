@@ -8,6 +8,7 @@ import openstack from "./assets/openstack.svg";
 import tailwind from "./assets/tailwind.svg";
 import html5 from "./assets/html5.svg";
 import p1 from "./assets/p1.png";
+import p2 from "./assets/pic2.png";
 import python from "./assets/python.svg";
 import pandas from "./assets/python.svg";
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
@@ -16,22 +17,22 @@ const projects = [
   {
     title: "UAV4Everyone",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, saepe iure tempora nemo enim minima amet odio impedit magnam mollitia fugiat est eligendi facere tempore nisi, dolore deleniti! Cumque, aut doloribus! Debitis, suscipit! Minus reprehenderit fugit nihil quis a! Laudantium amet neque vero alias architecto quisquam corporis, culpa magni dicta",
+      "An academic website for researchers from various organisations to access drone datasets and and introduction of object detection algorithms for curious minds ",
     image: p1,
     tech_stack: [rct, node, js, postgresql, openstack, tailwind, html5],
   },
   {
     title: "F1 through the years",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, saepe iure tempora nemo enim minima amet odio impedit magnam mollitia fugiat est eligendi facere tempore nisi, dolore deleniti! Cumque, aut doloribus! Debitis, suscipit! Minus reprehenderit fugit nihil quis a! Laudantium amet neque vero alias architecto quisquam corporis, culpa magni dicta",
-    image: p1,
+      "A web application to visualise F1 data collected over the years through Ergast developer API.",
+    image: p2,
 
     tech_stack: [python, pandas, tailwind, html5],
   },
   {
     title: "Netflix Stock price prediction",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, saepe iure tempora nemo enim minima amet odio impedit magnam mollitia fugiat est eligendi facere tempore nisi, dolore deleniti! Cumque, aut doloribus! Debitis, suscipit! Minus reprehenderit fugit nihil quis a! Laudantium amet neque vero alias architecto quisquam corporis, culpa magni dicta",
+      "An EDA of Netflix stock prices and prediction using Bi-LSTM models using PowerBi  and ML tools.",
     image: p1,
 
     tech_stack: [rct, node, js, postgresql, openstack, tailwind, html5],
@@ -40,7 +41,10 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="m-[10px] lg:m-[20px]  text-txt flex-col " id="projects">
+    <div
+      className="m-[10px] lg:m-[20px]  text-txt flex-col mb-[40px] lg:mb-[70px] "
+      id="projects"
+    >
       <div className="flex justify-center">
         <h1 className="text-txt text-[25px] lg:text-[35px]">Projects</h1>
       </div>
@@ -52,16 +56,16 @@ function Projects() {
                 <CardTitle className="text-accent text-[15px] lg:text-[25px]">
                   {data.title}
                 </CardTitle>
-                <div className="flex ">
-                  <CardDescription className="text-[12px] text-justify lg:w-3/5 lg:text-[18px] ">
+                <div className="flex justify-between">
+                  <CardDescription className="text-[12px] text-justify lg:w-2/5 lg:text-[18px] flex items-center ">
                     {data.description}
                   </CardDescription>
                   <div className="w-2/5  hidden lg:block ">
                     <AspectRatio
-                      ratio={16 / 6}
+                      ratio={10 / 4}
                       className="lg:flex lg:flex-row lg:justify-end"
                     >
-                      <img src={p1} className=""></img>
+                      <img src={data.image} className=""></img>
                     </AspectRatio>
                   </div>
                 </div>

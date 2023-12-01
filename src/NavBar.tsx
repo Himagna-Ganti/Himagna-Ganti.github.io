@@ -40,7 +40,7 @@ function NavBar() {
                     offset={0}
                     duration={500}
                   >
-                    <Button className="bg-background text-accent w-[200px]  ">
+                    <Button className="bg-background text-accent w-[200px] hover:bg-accent hover:text-background active:bg-accent active:text-background ">
                       Experience
                     </Button>
                   </Link>
@@ -53,7 +53,7 @@ function NavBar() {
                     offset={0}
                     duration={500}
                   >
-                    <Button className="bg-background text-accent w-[200px]  ">
+                    <Button className="bg-background text-accent w-[200px] hover:bg-accent hover:text-background   ">
                       Projects
                     </Button>
                   </Link>
@@ -66,7 +66,7 @@ function NavBar() {
                     offset={0}
                     duration={500}
                   >
-                    <Button className="bg-background text-accent w-[200px]  ">
+                    <Button className="bg-background text-accent w-[200px] hover:bg-accent hover:text-background  ">
                       Skills
                     </Button>
                   </Link>
@@ -79,7 +79,7 @@ function NavBar() {
                     offset={0}
                     duration={500}
                   >
-                    <Button className="bg-background text-accent w-[200px]  ">
+                    <Button className="bg-background text-accent w-[200px] hover:bg-accent hover:text-background  ">
                       Contact me
                     </Button>
                   </Link>
@@ -92,7 +92,7 @@ function NavBar() {
                     offset={0}
                     duration={500}
                   >
-                    <Button className="bg-background text-accent w-[200px]  ">
+                    <Button className="bg-background text-accent w-[200px] hover:bg-accent hover:text-background  ">
                       Resume
                     </Button>
                   </Link>

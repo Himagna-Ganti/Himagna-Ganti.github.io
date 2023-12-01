@@ -8,7 +8,7 @@ import Skills from "./Skills";
 
 function App() {
   return (
-    <div className="font-pop m-[15px] lg:m-[25px] ">
+    <div className="font-pop m-[5px] lg:m-[20px] ">
       <NavBar />
       <hr className="bg-[#ffd60a] rounded border-0  h-[1px] m-[10px] lg:m-[20px]" />
       <Hero />
