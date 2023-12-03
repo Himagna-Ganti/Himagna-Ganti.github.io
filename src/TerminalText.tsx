@@ -67,33 +67,33 @@ function TerminalText() {
           />
           <br />
           <Typed
+            strings={["-> System Adminstration"]}
+            showCursor={false}
+            startDelay={5200}
+            typeSpeed={18}
+            className=""
+          />
+          <br />
+          <Typed
+            strings={["-> Serverless Architecture"]}
+            showCursor={false}
+            startDelay={6400}
+            typeSpeed={18}
+            className=""
+          />
+          <br />
+          <Typed
             strings={["-> CI/CD"]}
             showCursor={false}
-            startDelay={6000}
+            startDelay={7200}
             typeSpeed={18}
             className=""
           />
           <br />
           <Typed
-            strings={["-> DevOps"]}
+            strings={["-> Algorithmic problem solving"]}
             showCursor={false}
-            startDelay={7500}
-            typeSpeed={18}
-            className=""
-          />
-          <br />
-          <Typed
-            strings={["-> Serverless architecture"]}
-            showCursor={false}
-            startDelay={8600}
-            typeSpeed={18}
-            className=""
-          />
-          <br />
-          <Typed
-            strings={["-> Serverless API design"]}
-            showCursor={false}
-            startDelay={10200}
+            startDelay={7900}
             typeSpeed={18}
             className=""
           />

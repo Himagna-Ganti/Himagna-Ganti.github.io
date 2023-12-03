@@ -9,6 +9,7 @@ import tailwind from "./assets/tailwind.svg";
 import html5 from "./assets/html5.svg";
 import p1 from "./assets/p1.png";
 import p2 from "./assets/pic2.png";
+import p3 from "./assets/p3.png";
 import python from "./assets/python.svg";
 import pandas from "./assets/python.svg";
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
@@ -17,7 +18,7 @@ const projects = [
   {
     title: "UAV4Everyone",
     description:
-      "An academic website for researchers from various organisations to access drone datasets and and introduction of object detection algorithms for curious minds ",
+      "An academic website for researchers from various organisations to access drone datasets and introduction of object detection algorithms for curious minds ",
     image: p1,
     tech_stack: [rct, node, js, postgresql, openstack, tailwind, html5],
   },
@@ -33,7 +34,7 @@ const projects = [
     title: "Netflix Stock price prediction",
     description:
       "An EDA of Netflix stock prices and prediction using Bi-LSTM models using PowerBi  and ML tools.",
-    image: p1,
+    image: p3,
 
     tech_stack: [rct, node, js, postgresql, openstack, tailwind, html5],
   },
