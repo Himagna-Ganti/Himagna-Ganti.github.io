@@ -12,6 +12,7 @@ module.exports = {
         nunito: ["Nunito", "sans-serif"],
         pop: ["Poppins", "sans-serif"],
         menlo: ["Menlo", "sans-serif"],
+        monaco: ["Monaco", "sans-serif"],
       },
       colors: {
         txt: "#FFFFFF",

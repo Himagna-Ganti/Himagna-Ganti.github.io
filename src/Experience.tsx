@@ -47,8 +47,8 @@ function Experience() {
         {workEx.map(function (data) {
           return (
             <div className=" mb-[15px] flex flex-col p-[10px]">
-              <div className="mb-[5px] flex flex-row justify-between">
-                <h1 className="text-accent text-[12px] lg:text-[25px]">
+              <div className=" flex flex-row justify-between">
+                <h1 className="text-accent text-[12px] lg:text-[20px]">
                   {data.company}
                 </h1>
                 <h1 className="text-txt text-[12px] pt-[5px] lg:text-[18px]">

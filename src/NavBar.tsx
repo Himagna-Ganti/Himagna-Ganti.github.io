@@ -85,17 +85,14 @@ function NavBar() {
                   </Link>
                 </SheetClose>
                 <SheetClose asChild className="flex justify-center">
-                  <Link
-                    to="experience"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
+                  <a
+                    href="https://drive.google.com/file/d/1DOcmSL00U3jz4ZBcYW0XYhrgJ63FjGwt/view?usp=drive_link"
+                    target="_blank"
                   >
                     <Button className="bg-background text-accent w-[200px] hover:bg-accent hover:text-background  ">
                       Resume
                     </Button>
-                  </Link>
+                  </a>
                 </SheetClose>
               </div>
               <SheetClose className="bg-accent" />
@@ -148,12 +145,9 @@ function NavBar() {
               Contact Me
             </Button>
           </Link>
-          <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
+          <a
+            href="https://drive.google.com/file/d/1DOcmSL00U3jz4ZBcYW0XYhrgJ63FjGwt/view?usp=drive_link"
+            target="_blank"
           >
             <Button
               variant="link"
@@ -161,7 +155,7 @@ function NavBar() {
             >
               Resume
             </Button>
-          </Link>
+          </a>
         </ul>
       </div>
     </section>

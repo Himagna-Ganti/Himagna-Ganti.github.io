@@ -3,6 +3,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import rct from "./assets/react.svg";
 import node from "./assets/node.svg";
 import js from "./assets/js.svg";
+import gh from "./assets/gh.svg";
 import postgresql from "./assets/postgresql.svg";
 import openstack from "./assets/openstack.svg";
 import tailwind from "./assets/tailwind.svg";
@@ -11,7 +12,9 @@ import p1 from "./assets/p1.png";
 import p2 from "./assets/pic2.png";
 import p3 from "./assets/p3.png";
 import python from "./assets/python.svg";
-import pandas from "./assets/python.svg";
+import pandas from "./assets/pandas.svg";
+import stream from "./assets/streamlit-mark.svg";
+import power from "./assets/power.svg";
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
 
 const projects = [
@@ -21,6 +24,7 @@ const projects = [
       "An academic website for researchers from various organisations to access drone datasets and introduction of object detection algorithms for curious minds ",
     image: p1,
     tech_stack: [rct, node, js, postgresql, openstack, tailwind, html5],
+    link: "https://github.com/Himagna-Ganti/UAV_4_Everyone",
   },
   {
     title: "F1 through the years",
@@ -28,7 +32,8 @@ const projects = [
       "A web application to visualise F1 data collected over the years through Ergast developer API.",
     image: p2,
 
-    tech_stack: [python, pandas, tailwind, html5],
+    tech_stack: [python, pandas, stream],
+    link: "https://github.com/Himagna-Ganti/f1_through_the_years",
   },
   {
     title: "Netflix Stock price prediction",
@@ -36,7 +41,8 @@ const projects = [
       "An EDA of Netflix stock prices and prediction using Bi-LSTM models using PowerBi  and ML tools.",
     image: p3,
 
-    tech_stack: [rct, node, js, postgresql, openstack, tailwind, html5],
+    tech_stack: [python, pandas, power],
+    link: "",
   },
 ];
 
@@ -54,9 +60,17 @@ function Projects() {
           return (
             <Card className=" p-[10px] border-0 shadow-xl lg:p-[20px] bg-[rgb(30,30,30)]">
               <div className="space-y-2 flex-col">
-                <CardTitle className="text-accent text-[15px] lg:text-[25px]">
-                  {data.title}
-                </CardTitle>
+                <div className="flex justify-between">
+                  <CardTitle className="text-accent text-[15px] lg:text-[25px]">
+                    {data.title}
+                  </CardTitle>
+
+                  <Avatar className="h-[25px] w-[25px] lg:h-[35px] lg:w-[35px] ">
+                    <a href={data.link} target="_blank">
+                      <AvatarImage src={gh}></AvatarImage>
+                    </a>
+                  </Avatar>
+                </div>
                 <div className="flex justify-between">
                   <CardDescription className="text-[12px] text-justify lg:w-2/5 lg:text-[18px] flex items-center ">
                     {data.description}

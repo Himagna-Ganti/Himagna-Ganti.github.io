@@ -11,11 +11,11 @@ let skills = [
   },
   {
     data: "Java",
-    learning: "0",
+    learning: "1",
   },
   {
     data: "Bash",
-    learning: "1",
+    learning: "0",
   },
 
   {
@@ -36,7 +36,7 @@ let skills = [
   },
   {
     data: "React",
-    learning: "1",
+    learning: "0",
   },
   { data: "Tailwind", learning: "0" },
   {
@@ -64,17 +64,14 @@ let skills = [
     data: "Ansible",
     learning: "1",
   },
+  { data: "Kubernetes", learning: "1" },
   {
     data: "NGINX",
     learning: "0",
   },
   {
-    data: "NPM",
-    learning: "1",
-  },
-  {
     data: "Django-REST",
-    learning: "0",
+    learning: "1",
   },
   {
     data: "Postman",
@@ -99,7 +96,7 @@ let skills = [
   },
   {
     data: "Plotly",
-    learning: "1",
+    learning: "0",
   },
   {
     data: "Streamlit",

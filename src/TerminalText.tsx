@@ -10,7 +10,7 @@ function TerminalText() {
           <Avatar className="h-[8px] w-[8px] lg:h-[10px] lg:w-[10px] rounded-full bg-[#ffbd2e]" />
           <Avatar className="h-[8px] w-[8px] lg:h-[10px] lg:w-[10px] rounded-full bg-[#27c93f]" />
         </div>
-        <div className="flex-col  text-[12px] lg:text-[18px]  m-[10px] font-menlo">
+        <div className="flex-col  text-[12px] lg:text-[18px]  m-[10px] font-monaco">
           <Typed
             strings={["hganti@prod:~$"]}
             showCursor={false}
