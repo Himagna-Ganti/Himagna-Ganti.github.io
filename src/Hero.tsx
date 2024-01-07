@@ -19,10 +19,10 @@ function Hero() {
         </blockquote>
         <br />
         <h2 className="text-[15px] lg:text-[20px] text-txt text-justify ">
-          I am a skilled full-stack developer with expertise in Javascript and
-          Python, passionate about building things. I am a creative, motivated
-          and an inquisitive individual who tackles problems with a technology
-          agnostic mindset.
+          I am a skilled full-stack developer with expertise in Java, Javascript
+          and Python, passionate about building things. I am a creative,
+          motivated and an inquisitive individual who tackles problems with a
+          technology agnostic mindset.
         </h2>
         <div className="flex flex-row mt-[50px]  space-x-[20px]">
           <a
